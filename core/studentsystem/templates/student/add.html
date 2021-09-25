@@ -1,0 +1,32 @@
+{% extends 'student/index.html' %}
+
+
+{%block body%}
+<div class="add-title">
+    <h1>Add Student</h1>
+  
+</div> 
+<form class="add-container" method="POST">
+    {% csrf_token %}
+    <div class="add-content">
+        <label for="name" style="color: aliceblue;">Full Name:</label> 
+        <input type="text" name="sdtname">
+        <label for="name" style="color: aliceblue;">StudentID:</label> 
+        <input type="number" name="sdtid" id="">
+        <label for="name" style="color: aliceblue;">Class:</label> 
+        <input type="text" name="sdtclass">
+        <label for="name" style="color: aliceblue;">Phone Number:</label> 
+        <input type="tel" name="sdttel">
+        <label for="name" style="color: aliceblue;">Email:</label> 
+        <input type="email" name="sdtemail" id="">
+        <label for="name" style="color: aliceblue;">BirthDay:</label> 
+        <input type="date" name="sdtday">
+        <label for="name" style="color: aliceblue;">Parent Name:</label> 
+        <input type="text" name="parentname">
+        <div class="sub"><input type="submit" value="Submit"></div>
+        
+
+    </div>
+</form>
+
+{%endblock%}

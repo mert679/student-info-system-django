@@ -1,0 +1,27 @@
+{% extends 'student/index.html' %}
+
+{%block body%}
+
+<div class="detail-container">
+    <form class="detail-main" method="POST">
+        {% csrf_token %}
+        <div class="add-content">
+            <label for="name" style="color: aliceblue;">Full Name:</label> 
+            <input type="text" name="sdtname" value={{form.sdtname}}>
+            <label for="name" style="color: aliceblue;">StudentID:</label> 
+            <input type="number" name="sdtid" value={{form.sdtid}}>
+            <label for="name" style="color: aliceblue;">Class:</label> 
+            <input type="text" name="sdtclass" value={{form.sdtclass}}>
+            <label for="name" style="color: aliceblue;">Phone Number:</label> 
+            <input type="tel" name="sdttel" value={{form.sdttel}}>
+            <label for="name" style="color: aliceblue;">Email:</label> 
+            <input type="email" name="sdtemail" id="" value={{form.sdtemail}}>
+            <label for="name" style="color: aliceblue;">BirthDay:</label> 
+            <input type="date" name="sdtday" value={{form.sdtday}}>
+            <label for="name" style="color: aliceblue;">Parent Name:</label> 
+            <input type="text" name="parentname" value={{form.parentname}}>
+            <div class="sub"><input type="submit" value="Submit"></div>
+    </form>
+</div>
+
+{%endblock%}

@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(54, 49, 49);
+}
+::placeholder{
+    padding-left: 50px;
+}
+.title{
+    padding: 25px;
+    border: 1px solid wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+}
+
+.container{
+    padding: 55px;
+    border: 1px solid wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 800px;
+}
+.main>a{
+    text-decoration: none;
+    color: wheat;
+    border: 1px solid yellow;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+.main>a:hover{
+    background-color: rgb(71, 71, 8);
+    transition: 0.5s ease-in-out;
+}
+.search{
+    width: 290px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+}
+.table{
+    
+   margin-top: 20px;
+    border: 1px solid chocolate;
+}
+table{
+    margin: 3% auto;
+    width: 900px;
+    border: 1px solid wheat;
+    color: wheat;
+}
+th{
+    border-bottom: 1px solid wheat;
+    color: wheat;
+}
+
+td{
+  text-align: center;
+
+}
+td>a{
+    text-decoration: none;
+    border: 1px solid yellow;
+    padding: 3px 12px;
+    border-radius: 4px;
+    color: wheat;
+    
+}
+td>a:hover{
+    background-color: rgb(71, 71, 8);
+    transition: 0.5s ease-in-out;
+}
+
+td>form>.btn{
+    background-color: rgb(54, 49, 49);
+    border: 1px solid yellow;
+    padding: 3px 12px;
+    border-radius: 4px;
+    color: wheat;
+    cursor: pointer;
+    
+}
+td>form> .btn:hover{
+    background-color: rgb(71, 71, 8);
+    transition: 0.5s ease-in-out;
+}
+
+
+
+tbody>tr{
+    height: 40px;
+}
+
+/*Add page*/
+.add-title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid wheat;
+}
+.add-title>h1{
+    color: wheat;
+}
+.add-container{
+    margin: 5% auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.add-content{
+    display: flex;
+    flex-direction: column;
+}
+.add-content>label{
+    margin-top: 5px;
+}
+.add-content>input{
+    width: 550px;
+    padding: 15px 5px;
+    margin-top: 10px;
+}
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub>input{
+    margin-top: 15px;
+    padding: 8px 28px;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: black;
+    color: wheat;
+}
+.sub>input:hover{
+    background-color: rgb(71, 71, 8);
+    transition: 0.5s ease-in-out;
+}
+/*detail*/
+
+.detail-container{
+    
+    margin: 3% auto;
+    display: grid;
+    place-items: center;
+
+}
+
+.detail-main{
+
+    display: flex;
+    flex-direction: column;
+}
+.detail-main>ul{
+
+    width: 550px;
+    padding: 15px 5px;
+    margin-top: 8px;
+    list-style-type: none;
+    color: wheat;
+}
+.detail-main>ul>li{
+    border: 1px solid yellow;
+    width: 550px;
+    padding: 15px 5px;
+    margin-top: 10px;
+    color: wheat;
+}
+ul>span{
+    font-size: 20px;
+}
+.sub>a{
+    margin-top: 15px;
+    padding: 8px 28px;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: black;
+    color: wheat;
+    text-decoration: none;
+}
+.sub>a:hover{
+    background-color: rgb(71, 71, 8);
+    transition: 0.5s ease-in-out;
+}
+/*edit page*/
+
+
+.detail-main>.edit-main{
+
+    width: 550px;
+    padding: 15px 5px;
+    margin-top: 8px;
+    list-style-type: none;
+    color: wheat;
+}
+.detail-main>.edit-main>input{
+    border: 1px solid yellow;
+    width: 550px;
+    padding: 15px 5px;
+    margin-top: 10px;
+    color: wheat;
+}

@@ -1,0 +1,21 @@
+{% extends 'student/index.html' %}
+
+{%block body%}
+
+<div class="detail-container">
+    <div class="detail-main">
+        <ul>
+            <span>StudentID:</span><li>{{obj.sdtid}}</li>
+            <span>Full Name:</span> <li>{{obj.sdtname}}</li>
+            <span>Class:</span><li>{{obj.sdtclass}}</li>
+            <span>Phone Number:</span><li>{{obj.sdttel}}</li>
+            <span>Email:</span><li>{{obj.sdtemail}}</li>
+            <span>BirthDay:</span><li>{{obj.sdtday}}</li>
+            <span>Parent Name:</span><li>{{obj.parentname}}</li>
+            <div class="sub"><a href="{% url 'home'%}">Home</a></div>
+        </ul>
+
+    </div>
+</div>
+
+{%endblock%}
